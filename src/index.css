@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #f7f8fa;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    line-height: 1.7;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(255,152,0,0.08);
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 hover:bg-secondary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px 0 rgba(60,72,88,0.08);
+    padding: 2rem 1.5rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 32px 0 rgba(60,72,88,0.16);
+    transform: translateY(-4px) scale(1.02);
+  }
+  
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@layer utilities {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1a237e;
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.2s, border-bottom 0.2s;
+  }
+  a:hover {
+    color: #ff5722;
+    border-bottom: 2px solid #ff9800;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: #ececec;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ff9800;
+    border-radius: 4px;
+  }
+} 
