@@ -6,7 +6,6 @@ import About from './pages/About'
 import Purpose from './pages/Purpose'
 import BoardMembers from './pages/BoardMembers'
 import ScholarshipApplication from './pages/ScholarshipApplication'
-import MembershipApplication from './pages/MembershipApplication'
 import OzanSungurlu from "./pages/OzanSungurlu";
 import Donation from "./pages/Donation";
 
@@ -22,7 +21,6 @@ function App() {
             <Route path="/kurulus-amaci" element={<Purpose />} />
             <Route path="/kurul-uyeleri" element={<BoardMembers />} />
             <Route path="/burs-basvuru" element={<ScholarshipApplication />} />
-            <Route path="/uyelik-basvuru" element={<MembershipApplication />} />
             <Route path="/ozan-sungurlu" element={<OzanSungurlu />} />
             <Route path="/donation" element={<Donation />} />
           </Routes>

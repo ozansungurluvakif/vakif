@@ -51,11 +51,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/uyelik-basvuru" className="text-gray-300 hover:text-white transition-colors">
-                  Üyelik Başvuru
-                </Link>
-              </li>
-              <li>
                 <Link to="/donation" className="text-gray-300 hover:text-white transition-colors">
                   Bağış
                 </Link>
@@ -69,16 +64,18 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary-400" />
-                <span className="text-gray-300">Adres bilgisi buraya gelecek</span>
+                <span className="text-gray-300">Çankaya Ankara</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary-400" />
-                <span className="text-gray-300">+90 (312) 000 00 00</span>
+                <span className="text-gray-300">03122072160 </span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary-400" />
-                <span className="text-gray-300">info@ozansungurluvakfi.org</span>
-              </div>
+             <div className="flex items-center gap-2">
+  <Mail className="h-5 w-5 text-primary-400 shrink-0" />
+  <span className="text-gray-300">ozansungurluegitimvakfi@gmail.com
+</span>
+</div>
+
             </div>
           </div>
         </div>

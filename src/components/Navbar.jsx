@@ -13,7 +13,6 @@ const Navbar = () => {
     { name: 'Kuruluş Amacı', href: '/kurulus-amaci' },
     { name: 'Kurul Üyeleri', href: '/kurul-uyeleri' },
     { name: 'Burs Başvuru', href: '/burs-basvuru' },
-    { name: 'Üyelik Başvuru', href: '/uyelik-basvuru' },
     { name: 'Bağış', href: '/donation' },
   ]
 
